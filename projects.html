@@ -7,67 +7,67 @@
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Projects</title>
 </head>
 
 <body>
+  <div class="project">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a>             </li>
+          <li><a href="./projects.html">Projects</a>      </li>
+          <li><a href="./experience.html">Experience</a>  </li>
+          <li><a href="./gallery.html">Gallery</a>        </li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a>             </li>
-        <li><a href="./projects.html">Projects</a>      </li>
-        <li><a href="./experience.html">Experience</a>  </li>
-        <li><a href="./gallery.html">Gallery</a>        </li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <h1>Projects</h1>
+      <section>
+        <article>
+          <h2>RISC V Out of Order Superscalar Processor</h2>
+          <p>
+              ◼ Designed a parametrizable 4 issue out of order core using SystemVerilog, supporting all RV32I instructions <br/>
+              ◼ Explicit register renaming scheme, non blocking 4 way associative L1 cache and 7 pipelined execution units <br/>
+              ◼ Equipped with speculative LSQ and store/load dependency prediction to accelerate memory operations <br/>
+              ◼ Developed a random instruction stream generator in Python to stress test the out of order core <br/>
+              ◼ Developed an automated regression testing script in Shell, synthesized with DC. The processor runs at 333 MHz under 130nm node <br/>      
+          </p>
+          <figure>
+              <img src="images/project_470.JPG" alt="project_470" width="500"/>
+          </figure> 
 
-  <main>
-    <h1>Projects</h1>
-    <section>
-      <article>
-        <h2>RISC V Out of Order Superscalar Processor</h2>
-        <p>
-            ◼ Designed a parametrizable 4 issue out of order core using SystemVerilog, supporting all RV32I instructions <br/>
-            ◼ Explicit register renaming scheme, non blocking 4 way associative L1 cache and 7 pipelined execution units <br/>
-            ◼ Equipped with speculative LSQ and store/load dependency prediction to accelerate memory operations <br/>
-            ◼ Developed a random instruction stream generator in Python to stress test the out of order core <br/>
-            ◼ Developed an automated regression testing script in Shell, synthesized with DC. The processor runs at 333 MHz under 130nm node <br/>      
-        </p>
-        <figure>
-            <img src="images/project_470.JPG" alt="project_470" width="500"/>
-        </figure> 
+          <h2>16 bit RISC Microprocessor</h2>
+          <p>
+              ◼ Designed a 130nm two stage pipelined RISC processor using full custom design flow <br/>
+              ◼ Equipped with single cycle hardware booth multiplier for fast multiplication <br/>
+              ◼ Designed register file, ALU, shifter and multiplier by drawing schematics and hand layout using Virtuoso <br/>
+              ◼ Designed PC and instruction decoder in Verilog, synthesized using DC, APR using Innovus <br/>
+              ◼ Integrated all the blocks with memory SRAM and IO pads using Innovus. The processor runs at 168Mhz <br/>
+              ◼ Complete post layout RC parasitic parameter extraction and full chip physical verification <br/>    
+          </p>
+          <figure>
+              <img src="images/project_427.PNG" alt="project_427" width="500"/>
+          </figure> 
 
-        <h2>16 bit RISC Microprocessor</h2>
-        <p>
-            ◼ Designed a 130nm two stage pipelined RISC processor using full custom design flow <br/>
-            ◼ Equipped with single cycle hardware booth multiplier for fast multiplication <br/>
-            ◼ Designed register file, ALU, shifter and multiplier by drawing schematics and hand layout using Virtuoso <br/>
-            ◼ Designed PC and instruction decoder in Verilog, synthesized using DC, APR using Innovus <br/>
-            ◼ Integrated all the blocks with memory SRAM and IO pads using Innovus. The processor runs at 168Mhz <br/>
-            ◼ Complete post layout RC parasitic parameter extraction and full chip physical verification <br/>    
-        </p>
-        <figure>
-            <img src="images/project_427.PNG" alt="project_427" width="500"/>
-        </figure> 
-      </article>
-      <aside>
-        <p></p> 
-      </aside>
+        </article>
+      </section> 
+    </main>
+    
+    <aside>
+      <p>I am currently seeking a Master's-level internship in design verification for Summer 2023. I am interested in computer architecture and high speed IO. </p> 
+    </aside>
 
+    <footer>
+      <p>Contact me at hanbo@umich.edu <i class="fa fa-envelope"></i></p>
+    </footer>
 
-
-    </section> 
-
-
-  </main>
-  
-  <footer>
-    <p>Contact me at hanbo@umich.edu </p>
-  </footer>
-
-
+  </div>
 </body>
 
 </html>
