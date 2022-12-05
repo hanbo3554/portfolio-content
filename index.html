@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X9LK8YR9D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4X9LK8YR9D');
+  </script>
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.ico">
@@ -15,28 +24,34 @@
 
 <body>
   <div class="index">
+    <a class = "skip" href="#skip">Skip to Main Content</a>
     <header>  
       <nav>
         <ul>
-          <li><a href="./index.html">     Home        </a></li>
-          <li><a href="./projects.html">  Projects    </a></li>
-          <li><a href="./experience.html">Experience  </a></li>
-          <li><a href="./gallery.html">   Gallery     </a></li>
+          <li><a class="current_page" href="./index.html">     Home        </a></li>
+          <li><a                      href="./projects.html">  Projects    </a></li>
+          <li><a                      href="./experience.html">Experience  </a></li>
+          <li><a                      href="./gallery.html">   Gallery     </a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="skip">
       <h1>Personal Portfolio</h1>
       <section>
         <article>
           <h2>Introduction</h2>
           <p>
             Hello! My name is Hanbo. I am a student pursuing a Master's degree in Electrical and Computer Engineering at the University of Michigan.
-
             I have internship experience as a design verification engineer and I received my B.S. in Electrical Engineering from the Penn State University in May 2020.
-
-            I am currently seeking a Design Verification Engineer position to begin my career in a high-level professional environment.         
+            I am currently seeking a Design Verification Engineer position to begin my career in a high-level professional environment.   
+            If you take the time to scroll through my pages, you will see examples of my work, images of my projects, and how I am involved in school.      
+          </p>
+          <p>
+            I am also an amateur photographer. I specialize in landscape and portrait photography, 
+            and I particularly enjoy shooting in dark environments and creating images with a "fairy tale" feel. 
+            My main equipment is a Canon 5D Mark III. I sometimes shoot with film and develop film myself. 
+            The film images are not as perfect as digital images, but the tone, softness and grain of my film work is something that I enjoy very much.
           </p>
         </article>
 
@@ -44,6 +59,28 @@
           <img id="logo" src="images/go_blue.png" alt="go blue"/>
         </figure>  
 
+        <hr>
+
+        <p>Feel free to drop me a line here</p>
+        <form action="https://formspree.io/f/xvoyvdrv" method="POST">
+          <label for="name">Your Name:</label>
+          <br>
+          <input type="text" name="name" id="name">
+          <br>
+          <label for="email">Your Email:</label>
+          <br>
+          <input type="text" name="email" id="email">
+          <br>
+          <label for="subject">Subject:</label>
+          <br>
+          <input type="text" name="subject" id="subject">
+          <br>
+          <label for="message">Your Message:</label>
+          <br>
+					<textarea id="message" name="message" rows="3" cols="40"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
       </section> 
     </main>
 
